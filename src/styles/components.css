@@ -1,6 +1,34 @@
-.my-custom-title {
-  color: purple;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
+.container {
+    @apply max-w-5xl mx-auto p-4 mb-8;
+}
+
+/* titleエリア */
+.title-area {
+    @apply flex flex-col items-center relative mt-5 mb-8;
+}
+
+.return-home {
+    @apply absolute left-0;
+}
+
+/* videoエリア */
+.video-area {
+    @apply flex flex-col items-center mb-8;
+}
+
+.video-wrapper {
+    @apply relative w-full pb-[56.25%] mb-5;
+}
+
+.video-frame {
+    @apply absolute top-0 left-0 w-full h-full border;
+}
+
+.list-area {
+    @apply [&>li]:font-semibold;
+}
+
+
+.skills {
+    @apply flex gap-5 mb-5 mt-2;
 }

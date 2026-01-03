@@ -1,4 +1,31 @@
 /* global styles */
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    @apply font-sans text-neutral-900 flex justify-center;
+}
+
+h1 {
+    @apply text-6xl font-bold mb-2;
+}
+
+h2 {
+    @apply text-2xl text-neutral-800 font-semibold mt-7;
+}
+
+h3 {
+    @apply text-lg text-neutral-700 font-semibold mt-2;
+}
+
+p {
+    @apply text-base leading-relaxed mb-5;
+}
+
+ul {
+    @apply list-inside list-disc mb-5;
+}
+
+a {
+    @apply text-gray-500 font-semibold cursor-pointer
+        hover:text-blue-600 
+        active:opacity-70 
+        focus:ring-2;
 }

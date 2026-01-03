@@ -1,17 +1,160 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Test</title>
-  <link rel="stylesheet" href="../../dist/styles/output.css">
-</head>
-<body class="bg-blue-100 p-10">
-  <h1 class="text-3xl font-bold text-red-500">Hello Tailwind!</h1>
-  <button class="px-4 py-2 bg-green-500 text-white rounded-lg">
-    ボタン
-  </button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/styles/output.css">
+    <title>Portfolio | tomochat</title>
+  </head>
+  <body class="bg-green-50">
+    <div class="container">
+      
+      <!-- header -->
+      <header class="title-area">
+        <a href="https://cyan613210.studio.site" class="return-home">← ホームに戻る</a>
+        <h1 class="text-green-600">tomochat</h1>
+        <p>~小学生を対象にした”安心して使えるチャットアプリ”~</p>
+      </header>
+      
+      <!-- section: 紹介動画・GitHubリンク -->
+      <section class="video-area">
+        <div class="video-wrapper">
+          <iframe class="video-frame" src="https://www.youtube.com/embed/vqypt-fk2pc?si=xz6C-zRNqLVxzOlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://github.com/sasakifuruta/chatapp">GitHubリンク</a>
+      </section>
+      
+      <!-- section: 概要 -->
+      <section>
+        <h2>【概要】</h2>
+        <p>夜遅くまでグループLINEがやめられない小学生に向けた、21時〜翌朝6時は自動で利用制限がかかるチャットアプリです。</p>
+        <ul>
+          <li>「寝たいけど途中退出が怖い」</li>
+          <li>「いじめが心配でグループLINEをやめられない」</li>
+          <li>「夜中までスマホを触るのを親が心配している」</li>
+        </ul>
+        <p>といった子どもと親の双方が抱える不安を解決します。</p>
+      </section>
 
-  <h2 class="my-custom-title">Custom Style Test</h2>
+      <!-- section: 主な機能 -->
+      <section>
+        <h2>【主な機能】</h2>
+        <p>⭐️：担当部分</p>
+         
+        <h3>＜基本機能＞</h3>
+        <ul>
+          <li>認証機能（新規登録・ログイン・ログアウト）⭐️</li>
+          <li>チャット（投稿・編集・削除）</li>
+          <li>チャンネル（追加・編集・削除）</li>
+          <li>プロフィール画像・グループアイコン設定</li>
+          <li>退会機能</li>
+        </ul>
+          
+        <h3>＜安心のための機能＞</h3>
+        <ul>
+          <li>21時〜翌朝6時の操作制限（投稿・編集・削除が不可）⭐️</li>
+          <li>該当時間帯にアクセスした際、アプリ内キャラクターが注意を促す演出</li>
+        </ul>
+      </section>
+      
+      <!-- section: 制作過程 -->
+      <section>
+        <h2>【制作期間】</h2>
+        <p>2ヶ月（2024年9月〜11月）</p>
+        
+        <h2>【チーム体制】</h2>
+        <p>5名チーム（フロント、バックエンド、インフラ）</p>
+        <p>自分の役割：サブリーダー/バックエンド/インフラ</p>
+        
+        <h2>【担当範囲】</h2>
+        <ul>
+          <li>認証機能の実装</li>
+          <li>21時〜翌朝6時の操作制限ロジック</li>
+          <li>AWSへのデプロイ（ALB・EC2・RDS）</li>
+        </ul>
+      </section>
 
+      <!-- 技術紹介 -->
+      <section>
+        <h2>【技術スタック】</h2>
+        <ul class="list-area">
+          <li>
+            Frontend
+            <div class="skills">
+              <img src="../assets/icons/html.svg" class="w-10 h-10" alt="HTML">
+              <img src="../assets/icons/css.svg" class="w-10 h-10" alt="CSS">
+              <img src="../assets/icons/js.svg" class="w-10 h-10" alt="JavaScript">
+            </div>
+          </li>
+
+          <li>
+            Backend
+            <div class="skills">
+              <img src="../assets/icons/python.svg" class="w-10 h-10" alt="Python">
+              <img src="../assets/icons/flask.svg" class="w-10 h-10" alt="Flask">
+            </div>
+          </li>
+          
+          <li>
+            Database
+            <div class="skills">
+              <img src="../assets/icons/mysql.svg" class="w-10 h-10" alt="MySQL">
+            </div>
+          </li>
+          
+          <li>
+            Infra
+            <div class="skills">
+              <img src="../assets/icons/docker.svg" class="w-10 h-10" alt="Docker">
+              <img src="../assets/icons/aws.svg" class="w-10 h-10" alt="AWS">
+            </div>
+          </li>
+        </ul>
+        
+        <h2>【アーキテクチャ】</h2>
+        <p>*以下はチーム開発時に作成した全体設計です。</p>
+        <ul class="list-area">
+          <li>
+            ディレクトリ構成
+            <img src="../assets/images/hackathon2024-F_dir.png" alt="ディレクトリ構成" class="border">
+          </li>
+          <li>
+            ER図
+            <img src="../assets/images/hackathon2024-F_er.drawio.svg" alt="ER図" class="border">
+          </li>
+          <li>
+            インフラ構成図
+            <img src="../assets/images/hackathon2024-F_infra.drawio.svg" alt="インフラ構成図" class="border">
+          </li>
+          </ul>
+      </section>
+      
+      <!-- section: 感想 -->
+      <section>
+        <h2>【意識した点】</h2>
+        <p>オンライン上でのコミュニケーションを前提にした中で全員が初めてのハッカソンであったため、特に以下の点に注力しました</p>
+        <ul>
+          <li>非同期コミュニケーションにおけるレスポンスの速さを徹底し、開発のボトルネックを解消する</li>
+          <li>ミーティング（oVice）で沈黙を作らないこと、チームの心理的安全性の構築を意識し、開発を前に進める</li>
+          <li>gitのブランチ運用（feature → develop → main というflow）を意識した開発</li>
+          <li>サンプルアプリを解析し、通信の流れやUXを理解</li>
+          <li>AWS上でのユーザー・開発者の通信の流れの理解</li>
+        </ul>
+        
+        <h2>【苦労した点】</h2>
+        <ul>
+          <li>チーム全体のモチベーションを維持し、開発方針を揃えること</li>
+          <li>何をするにも初めてで、調べながら進める毎日だったこと</li>
+          <li>実務で求められるスケーラビリティ（ALBによる負荷分散）やセキュリティ（プライベートサブネットでのDB運用）についての理解</li>
+        </ul>
+
+        <h2>【課題】</h2>
+        <ul>
+          <li>フロントエンドの実装についての理解が不十分だった</li>
+          <li>メンターの補助の下でAWSへのデプロイを実施したため、再現性が低い</li>
+          <li>ブラウザ（クライアント）・サーバー（EC2/Flask）・データベース（MySQL/RDS）の三者で基準となる時間が違うことに気付かなかった</li>
+        </ul>
+      </section>
+  </div>
 </body>
 </html>

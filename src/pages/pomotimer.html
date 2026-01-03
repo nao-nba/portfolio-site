@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/styles/output.css">
+    <title>Portfolio | tomochat</title>
+  </head>
+  <body class="bg-sky-50">
+    <div class="container">
+      
+      <!-- header -->
+      <header class="title-area">
+        <a href="https://cyan613210.studio.site" class="return-home">← ホームに戻る</a>
+        <h1 class="text-sky-600">pomotimer</h1>
+        <p>~アウトプットを意識するための学習時間管理アプリ~</p>
+      </header>
+      
+      <!-- section: 紹介動画・GitHubリンク -->
+      <section class="video-area">
+        <!-- <div class="video-wrapper">
+          <iframe class="video-frame"></iframe>
+        </div> -->
+        <a href="https://github.com/sasakifuruta/hackatho2025winTeamG">GitHubリンク</a>
+      </section>
+      
+      <!-- section: 概要 -->
+      <section>
+        <h2>【概要】</h2>
+        <p>ポモドーロタイマーを利用して学習時間を管理し、累積学習時間やアウトプットの比率を可視化します。</p>
+        <ul>
+          <li>学習時間を記録し、グラフにして可視化</li>
+          <li>計測開始時にインプット・アウトプットを指定することで、アウトプットを意識した学習管理ができます。</li>
+        </ul>
+      </section>
+
+      <!-- section: 主な機能 -->
+      <section>
+        <h2>【主な機能】</h2>
+        <p>⭐️：担当部分</p>
+         
+        <h3>＜基本機能＞</h3>
+        <ul>
+          <li>認証機能（新規登録・ログイン・ログアウト）⭐️</li>
+          <li>タイマー機能（学習/休憩時間開始・一時停止・終了）</li>
+          <li>グラフ機能（日・月・年ごとの集計）</li>
+        </ul>
+      </section>
+      
+      <!-- section: 制作過程 -->
+      <section>
+        <h2>【制作期間】</h2>
+        <p>2ヶ月（2025年1月〜3月）</p>
+        
+        <h2>【チーム体制】</h2>
+        <p>4名チーム（フロント、バックエンド、インフラ）</p>
+        <p>自分の役割：フロントエンド/バックエンド</p>
+        
+        <h2>【担当範囲】</h2>
+        <ul>
+          <li>認証機能のフロントエンド・バックエンドの実装</li>
+        </ul>
+      </section>
+
+      <!-- 技術紹介 -->
+      <section>
+        <h2>【技術スタック】</h2>
+        <ul class="list-area">
+          <li>
+            Frontend
+            <div class="skills">
+              <img src="../assets/icons/html.svg" class="w-10 h-10" alt="HTML">
+              <img src="../assets/icons/css.svg" class="w-10 h-10" alt="CSS">
+              <img src="../assets/icons/js.svg" class="w-10 h-10" alt="JavaScript">
+            </div>
+          </li>
+
+          <li>
+            Backend
+            <div class="skills">
+              <img src="../assets/icons/python.svg" class="w-10 h-10" alt="Python">
+              <img src="../assets/icons/django.svg" class="w-10 h-10" alt="Django">
+            </div>
+          </li>
+          
+          <li>
+            Database
+            <div class="skills">
+              <img src="../assets/icons/mysql.svg" class="w-10 h-10" alt="MySQL">
+            </div>
+          </li>
+          
+          <li>
+            Infra
+            <div class="skills">
+              <img src="../assets/icons/docker.svg" class="w-10 h-10" alt="Docker">
+              <img src="../assets/icons/aws.svg" class="w-10 h-10" alt="AWS">
+            </div>
+          </li>
+        </ul>
+        
+        <h2>【アーキテクチャ】</h2>
+        <p>*以下はチーム開発時に作成した全体設計です。</p>
+        <ul class="list-area">
+          <li>
+            ディレクトリ構成
+            <img src="../assets/images/hackathon2025win-G_dir.png" alt="ディレクトリ構成" class="border">
+          </li>
+          <li>
+            ER図
+            <img src="../assets/images/hackathon2025win-G_er.jpg" alt="ER図" class="border">
+          </li>
+          <li>
+            インフラ構成図
+            <img src="../assets/images/hackathon2024-F_infra.drawio.svg" alt="インフラ構成図" class="border">
+          </li>
+        </ul>
+      </section>
+      
+      <!-- section: 感想 -->
+      <section>
+        <h2>【意識した点】</h2>
+        <ul>
+          <li>Djangoの構造（Model/View/Template）やappサーバー（uWSGI）との関係についての理解</li>
+          <li>前回に引き続き、チームでのコミュニケーションを活発にするための振る舞い</li>
+          <li>CSSで基本的な画面構成を構築できるようになること</li>
+        </ul>
+        
+        <h2>【苦労した点】</h2>
+        <ul>
+          <li>Djangoにはじめて挑戦したが、MTVモデルのデータフローやappサーバー（uWSGI）との連携など、システムへの理解が不十分であり、開発スピードが上がらなかったこと</li>
+          <li>認証部分のCBVについて、ブラックボックス化されている処理の流れを公式ドキュメントやソースコードから読み取り理解すること</li>
+          <li>課題設定や設計意図についてチームで深く議論する環境が作れなかったこと</li>
+        </ul>
+        
+        <h2>【課題】</h2>
+        <ul>
+          <li>技術理解が追いつかず、担当部分の機能が動く状態にすることで精一杯となり、可読性や堅牢性といった点を考慮できなかった。</li>
+          <li>DjangoのCBVについて、裏側で何が行われているかを理解すること</li>
+          <li>JavaScriptでの非同期処理について理解を深めること</li>
+          <li>誰のどんな課題を解決するのかという点に基づき、UI/UXやMVP機能以降の方向性を検討すること</li>
+        </ul>
+      </section>
+  </div>
+</body>
+</html>

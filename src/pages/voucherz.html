@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/styles/output.css">
+    <title>Portfolio | tomochat</title>
+  </head>
+  <body class="bg-blue-50">
+    <div class="container">
+      
+      <!-- header -->
+      <header class="title-area">
+        <a href="https://cyan613210.studio.site" class="return-home">← ホームに戻る</a>
+        <h1 class="text-blue-600">VoucherZ</h1>
+        <p>~個人経営の小規模店舗に向けたクーポン発行アプリ~</p>
+      </header>
+      
+      <!-- section: 紹介動画・GitHubリンク -->
+      <section class="video-area">
+        <div class="video-wrapper">
+          <iframe class="video-frame" src="https://www.youtube.com/embed/m_8gcOZjjeQ?si=jqeLTh16e93yILip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+          <iframe class="video-frame" src="https://www.youtube.com/embed/9dYukomV8mM?si=oltES2GmnjsNJ_gl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://github.com/teamg-hackathon-2025/VoucherZ/tree/main">GitHubリンク</a>
+      </section>
+      
+      <!-- section: 概要 -->
+      <section>
+        <h2>【概要】</h2>
+        <ul>
+          <li>paypay等の決済サービス系アプリのクーポン発行機能の手数料が高く、利用が難しい個人経営の小規模店舗が対象。</li>
+          <li>店舗オーナーはクーポン発行・認証機能を利用することで紙ベースのクーポンやポイントカードの作成・管理の手間を解消できる。</li>
+          <li>クーポンの利用状況を管理することで、クーポン発行による販促効果をざっくりとした粒度で把握できる。</li>
+          <li>顧客側の認証機能を実装しないことにより、幅広い層の顧客が利用でき、店舗側の個人情報管理の負担も解消できる。</li>
+        </ul>
+      </section>
+
+      <!-- section: 主な機能 -->
+      <section>
+        <h2>【主な機能】</h2>
+        <p>⭐️：担当部分</p>
+         
+        <h3>＜基本機能＞</h3>
+        <ul>
+          <li>店主・店舗の認証機能（新規登録・ログイン・ログアウト）⭐️</li>
+          <li>クーポン作成・発行・削除機能</li>
+          <li>二次元バーコード・手入力でのクーポン認証機能 ⭐️</li>
+        </ul>
+      </section>
+      
+      <!-- section: 制作過程 -->
+      <section>
+        <h2>【制作期間】</h2>
+        <p>2か月（2025年5月～7月）</p>
+        
+        <h2>【チーム体制】</h2>
+        <p>4名チーム（フロントエンド、バックエンド、インフラ）</p>
+        <p>自分の役割：リーダー/フロントエンド/バックエンド</p>
+        
+        <h2>【担当範囲】</h2>
+        <ul>
+          <li>ランディングページの実装</li>
+          <li>認証機能のフロントエンド・バックエンドの実装</li>
+          <li>クーポン認証機能（手入力コード・二次元バーコード）のフロントエンド・バックエンドの実装</li>
+        </ul>
+      </section>
+
+      <!-- 技術紹介 -->
+      <section>
+        <h2>【技術スタック】</h2>
+        <ul class="list-area">
+          <li>
+            Frontend
+            <div class="skills">
+              <img src="../assets/icons/html.svg" class="w-10 h-10" alt="HTML">
+              <img src="../assets/icons/css.svg" class="w-10 h-10" alt="CSS">
+              <img src="../assets/icons/js.svg" class="w-10 h-10" alt="JavaScript">
+            </div>
+          </li>
+
+          <li>
+            Backend
+            <div class="skills">
+              <img src="../assets/icons/python.svg" class="w-10 h-10" alt="Python">
+              <img src="../assets/icons/django.svg" class="w-10 h-10" alt="Django">
+            </div>
+          </li>
+          
+          <li>
+            Database
+            <div class="skills">
+              <img src="../assets/icons/mysql.svg" class="w-10 h-10" alt="MySQL">
+            </div>
+          </li>
+          
+          <li>
+            Infra
+            <div class="skills">
+              <img src="../assets/icons/docker.svg" class="w-10 h-10" alt="Docker">
+              <img src="../assets/icons/aws.svg" class="w-10 h-10" alt="AWS">
+            </div>
+          </li>
+        </ul>
+        
+        <h2>【アーキテクチャ】</h2>
+        <p>*以下はチーム開発時に作成した全体設計です。</p>
+        <ul class="list-area">
+          <li>
+            ER図
+            <img src="../assets/images/hackathon-sum-G_er.png" alt="ER図" class="border">
+          </li>
+          <li>
+            インフラ構成図
+            <img src="../assets/images/hackathon2025sum-G_infra.png" alt="インフラ構成図" class="border">
+          </li>
+        </ul>
+      </section>
+      
+      <!-- section: 感想 -->
+      <section>
+        <h2>【意識した点】</h2>
+        <ul>
+          <li>高齢の店主や顧客層でも利用可能なUI・UXを検討すること</li>
+          <li>スムーズなUXを実現するための非同期処理の実装</li>
+          <li>スマホ・タブレットでの利用を想定したレスポンシブデザイン</li>
+          <li>HTTPステータスコードに応じたアプリの挙動</li>
+        </ul>
+        
+        <h2>【苦労した点】</h2>
+        <ul>
+          <li>アプリの設計やMVPの定義について、拡張性を重視する意見と期限内の完成を優先する意見の中での合意形成</li>
+          <li>堅牢な設計を意識して実装してみたが、Model,View,Formなど、各層ごとの責務を整理して実装すること</li>
+          <li>ランディングページなど、レスポンシブデザインの実装と各種デバイスに対応するための微調整の難しさ</li>
+          <li>非同期処理の実装（挙動の整合性を保つ、JsonResponseのデータの値の統一）</li>
+        </ul>
+
+        <h2>【課題】</h2>
+        <ul>
+          <li>チームメンバー全体が意見を出しやすい環境作り</li>
+          <li>意見が対立した時の調整とモチベーションや雰囲気の維持</li>
+          <li>各層の責務に対応したコードの整理や可読性・拡張性の検討</li>
+          <li>base.cssやbase.htmlなどフロントデザインを実装する際の設計思想</li>
+          <li>github actionsを利用したCI/CDの仕組みの理解</li>
+          <li>SOLID原則（インターフェイス分離）の観点から、バックエンドのコードがUIに過度に依存している（密結合）</li>
+        </ul>
+      </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../dist/styles/output.css">
+    <title>Portfolio | tomochat</title>
+  </head>
+  <body class="bg-gray-50">
+    <div class="container">
+      
+      <!-- header -->
+      <header class="title-area">
+        <a href="https://cyan613210.studio.site" class="return-home">← ホームに戻る</a>
+        <h1 class="text-gray-600">todo_app</h1>
+        <p>~~</p>
+      </header>
+      
+      <!-- section: 紹介動画・GitHubリンク -->
+      <section class="video-area">
+        <div class="video-wrapper">
+          <iframe class="video-frame" src="https://www.youtube.com/embed/Gb_BbUmPHRg?si=9SUN56PGyka25bqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="https://github.com/nao-nba/todo_app">GitHubリンク</a>
+      </section>
+      
+      <!-- section: 概要 -->
+      <section>
+        <h2>【概要】</h2>
+        <ul>
+          <li>タスク・メモをカテゴリごとに管理するシンプルなtodoアプリ</li>
+          <li>基礎的なCRUD処理や非同期処理の理解とWeb3層構造のデプロイ検証が目的</li>
+          <li>ハッカソンで見つかった技術的課題に対するキャッチアップと技術検証に利用</li>
+        </ul>
+      </section>
+
+      <!-- section: 主な機能 -->
+      <section>
+        <h2>【主な機能】</h2>
+         
+        <h3>＜基本機能＞</h3>
+        <ul>
+          <li>認証機能（新規登録・ログイン・ログアウト）</li>
+          <li>カテゴリ作成・変更・削除機能</li>
+          <li>タスク・メモ作成・変更・削除機能</li>
+        </ul>
+      </section>
+      
+      <!-- section: 制作過程 -->
+      <section>
+        <h2>【制作期間】</h2>
+        <p>2ヶ月（2025年11~12月）</p>
+      </section>
+
+      <!-- 技術紹介 -->
+      <section>
+        <h2>【技術スタック】</h2>
+        <ul class="list-area">
+          <li>
+            Frontend
+            <div class="skills">
+              <img src="../assets/icons/html.svg" class="w-10 h-10" alt="HTML">
+              <img src="../assets/icons/css.svg" class="w-10 h-10" alt="CSS">
+              <img src="../assets/icons/js.svg" class="w-10 h-10" alt="JavaScript">
+            </div>
+          </li>
+
+          <li>
+            Backend
+            <div class="skills">
+              <img src="../assets/icons/python.svg" class="w-10 h-10" alt="Python">
+              <img src="../assets/icons/django.svg" class="w-10 h-10" alt="Django">
+            </div>
+          </li>
+          
+          <li>
+            Database
+            <div class="skills">
+              <img src="../assets/icons/mysql.svg" class="w-10 h-10" alt="MySQL">
+            </div>
+          </li>
+          
+          <li>
+            Infra
+            <div class="skills">
+              <img src="../assets/icons/docker.svg" class="w-10 h-10" alt="Docker">
+              <img src="../assets/icons/aws.svg" class="w-10 h-10" alt="AWS">
+            </div>
+          </li>
+        </ul>
+        
+        <h2>【アーキテクチャ】</h2>
+        <ul class="list-area">
+          <!-- <li>
+            ディレクトリ構成
+            <img src="../assets/images/" alt="ディレクトリ構成" class="border">
+          </li> -->
+          <li>
+            ER図
+            <img src="../assets/images/todo_app-er.jpg" alt="ER図" class="border">
+          </li>
+          <li>
+            インフラ構成図
+            <img src="../assets/images/hackathon2024-F_infra.drawio.svg" alt="インフラ構成図" class="border">
+          </li>
+        </ul>
+      </section>
+      
+      <!-- section: 感想 -->
+      <section>
+        <h2>【意識した点】</h2>
+        <ul>
+          <li>実装経験の少なかったCRUD処理の理解と非同期処理</li>
+          <li>Djangoの各層の責務に応じた処理の整理とHTTPステータスコードに応じたレスポンスの実装</li>
+          <li>CSSデザイン設計を理解するためにSassを導入</li>
+          <li>AWS（ALB,EC2,RDS）へのweb3層構造でのデプロイを自力で行うこと</li>
+          <li>AWS（ALB,ECS on Fargate,RDS）へgithub actionsを利用したCI/CDでのデプロイの理解</li>
+        </ul>
+        
+        <h2>【苦労した点】</h2>
+        <ul>
+          <li>非同期処理がネストする時の挙動の整合性をとること（JsonResponseの値の共通化、処理ごとに共通のレンダリングをすることで解決）</li>
+          <li>DjangoコンテナとMySQLコンテナの起動タイミングの差異によるエラー対応</li>
+          <li>Django settings.pyの分割やenvファイルの整合性の担保</li>
+          <li>ALBのヘルスチェックの異常の解決</li>
+        </ul>
+
+        <h2>【課題】</h2>
+        <ul>
+          <li>UIデザインの構築（Figmaの操作）</li>
+          <li>envファイルを使った環境構築や開発・本番環境の分離</li>
+          <li>コミットの粒度とコミットメッセージ・プルリクエストの内容の整理</li>
+          <li>React,Next.jsなどのモダン技術やTailWind cssやTypeScriptなど未経験スキルの理解</li>
+        </ul>
+      </section>
+  </div>
+</body>
+</html>
